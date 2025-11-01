@@ -8,26 +8,11 @@ def calculate_bmi(height, weight):
     # Determine BMI classification using conditional operators
     if bmi < 18.5:
         print("Weight Classification: Under Weight")
+        return -1
     elif bmi <= 25.0:
         print("Weight Classification: Normal Weight")
+        return 0
     else:
         print("Weight Classification: Over Weight")
+        return 1
 
-calculate_bmi(weight=57, height=1.73)
-
-print("\n--- Testing All Classifications ---")
-
-print("\n1. Under Weight (BMI < 18.5):")
-calculate_bmi(weight=50, height=1.73)
-
-print("\n2. Normal Weight Boundary (BMI = 18.5):")
-calculate_bmi(weight=55.37, height=1.73)
-
-print("\n3. Normal Weight (18.5 ≤ BMI ≤ 25.0):")
-calculate_bmi(weight=57, height=1.73)
-
-print("\n4. Normal Weight Boundary (BMI = 25.0):")
-calculate_bmi(weight=74.82, height=1.73)
-
-print("\n5. Over Weight (BMI > 25.0):")
-calculate_bmi(weight=80, height=1.73)
